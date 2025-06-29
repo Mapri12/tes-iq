@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>IQ Test Online</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Selamat Datang di Tes IQ</h1>
+    <input type="text" id="username" placeholder="Masukkan Nama Anda" />
+    <button onclick="startTest()">Mulai Tes</button>
+    <div id="quiz" class="hidden">
+      <p id="question"></p>
+      <div id="options"></div>
+      <p id="timer"></p>
+      <button onclick="nextQuestion()">Selanjutnya</button>
+    </div>
+    <div id="result" class="hidden">
+      <h2>Hasil Anda</h2>
+      <p id="user"></p>
+      <p id="score"></p>
+      <p id="level"></p>
+      <button onclick="window.print()">Cetak Hasil</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
